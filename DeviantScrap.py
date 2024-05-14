@@ -355,4 +355,5 @@ if __name__ == "__main__":
     app.write_to_console("Welcome to the console!") 
     root.mainloop()
 
-# pyinstaller --onefile --icon=DeviantArtScraper.ico --name="DeviantArtScraper" MyScraptArt.py
+# zyavera
+# pyinstaller --onefile --icon=DeviantScrap.ico --name="DeviantScrap" DeviantScrap.py
