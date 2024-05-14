@@ -1,0 +1,209 @@
+{
+    "projet1": {
+        "titre": "Eiffel tower",
+        "description": "I released this Eiffel Tower to test my knowledge and my determination.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhbxmbt-e0279f75-bc63-40e8-ac05-c33c27d15866.png/v1/fill/w_1280,h_2276,q_80,strp/eiffel_tower_by_noamlefantom_dhbxmbt-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjI3NiIsInBhdGgiOiJcL2ZcLzRhZmU0ODQ5LTJmMjEtNGIzYi05YWIzLTdlYTc0YzMwYjQ1OVwvZGhieG1idC1lMDI3OWY3NS1iYzYzLTQwZTgtYWMwNS1jMzNjMjdkMTU4NjYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ._zldeHDjU9F2l8lVzYhx3dSeLzsAdLfPNDWvl8BTg2M",
+        "details": [
+            "3d",
+            "blender",
+            "modelling"
+        ]
+    },
+    "projet2": {
+        "titre": "Cabourg city hall",
+        "description": "A model project for MetaverseGT.All process of creation was released on blender except foliage.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhbxno9-9270d231-0770-4d5a-b788-1d5db33c0f8b.png/v1/fill/w_1280,h_720/cabourg_city_hall_by_noamlefantom_dhbxno9-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNGFmZTQ4NDktMmYyMS00YjNiLTlhYjMtN2VhNzRjMzBiNDU5XC9kaGJ4bm85LTkyNzBkMjMxLTA3NzAtNGQ1YS1iNzg4LTFkNWRiMzNjMGY4Yi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.eLAnN4gUjxfaYj53mmhFoo2THibFALzjNKonIuhJ-IM",
+        "details": [
+            "3d",
+            "blender",
+            "lightning",
+            "modelling",
+            "texturing",
+            "baking"
+        ]
+    },
+    "projet3": {
+        "titre": "3D-2D alley draw",
+        "description": "For a challenge, I decide to represent an alley in atypical style for 3D creation.This style is in draw representation.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhbxec6-e3c82dc1-dce3-49a6-9bea-5b8cdb083b98.png/v1/fill/w_1280,h_2276,q_80,strp/3d_2d_alley_draw_by_noamlefantom_dhbxec6-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjI3NiIsInBhdGgiOiJcL2ZcLzRhZmU0ODQ5LTJmMjEtNGIzYi05YWIzLTdlYTc0YzMwYjQ1OVwvZGhieGVjNi1lM2M4MmRjMS1kY2UzLTQ5YTYtOWJlYS01YjhjZGIwODNiOTgucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Y921QvG4fiAHzLNH0RIfmYljicw4E5QKuMKHuKXd66g",
+        "details": [
+            "2d",
+            "3d",
+            "blender",
+            "draw",
+            "alley",
+            "city",
+            "lightning",
+            "modelling",
+            "shading",
+            "blendereevee"
+        ]
+    },
+    "projet4": {
+        "titre": "Go to the depth of the ocean",
+        "description": "I don't know why, but I have looked to the sky, and I see the deeper of ocean.I decide to recreate this see with fauna and flora and a diver going deeper.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhbxexx-379a5358-74e8-4e42-a1a7-a02a1a6fd5d9.png/v1/fill/w_1280,h_1875,q_80,strp/go_to_the_depth_of_the_ocean_by_noamlefantom_dhbxexx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg3NSIsInBhdGgiOiJcL2ZcLzRhZmU0ODQ5LTJmMjEtNGIzYi05YWIzLTdlYTc0YzMwYjQ1OVwvZGhieGV4eC0zNzlhNTM1OC03NGU4LTRlNDItYTFhNy1hMDJhMWE2ZmQ1ZDkucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.P0AoAIyM3aj1MSExGGRTpvXmPQLs85h3pC9vFzoHecc",
+        "details": [
+            "3d",
+            "blender",
+            "shark",
+            "ocean",
+            "oceanlandscape",
+            "blendercycles"
+        ]
+    },
+    "projet5": {
+        "titre": "Realistic 3D Sunset",
+        "description": "Inspired by a picture of sunset, I realized a scene with concrete and rock way.A realy hot sun be front of us and dazzle us.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhbxeg3-84e34bd4-5132-417c-bcca-9ad496144754.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRhZmU0ODQ5LTJmMjEtNGIzYi05YWIzLTdlYTc0YzMwYjQ1OVwvZGhieGVnMy04NGUzNGJkNC01MTMyLTQxN2MtYmNjYS05YWQ0OTYxNDQ3NTQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cZ4TgVJEILNHI_h_-Of37pZNQJjjAkf9L8I2I6_Yc3o",
+        "details": [
+            "3d",
+            "blender",
+            "lightning",
+            "modelling",
+            "sea",
+            "texturing",
+            "compositing",
+            "shading",
+            "sunset",
+            "blenderrender",
+            "blendereevee"
+        ]
+    },
+    "projet6": {
+        "titre": "Veronoi picture Geonodes",
+        "description": "I used Geometry nodes of blender to creating veronoi modification.I can modify aspect of any image, the density (resolution) and the shape of veronoi effect.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhbxmpd-0434a4a7-75e0-4bd7-885f-d729b836950a.png/v1/fill/w_1280,h_1280,q_80,strp/veronoi_picture_geonodes_by_noamlefantom_dhbxmpd-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzRhZmU0ODQ5LTJmMjEtNGIzYi05YWIzLTdlYTc0YzMwYjQ1OVwvZGhieG1wZC0wNDM0YTRhNy03NWUwLTRiZDctODg1Zi1kNzI5YjgzNjk1MGEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qfXOGlKPPZjXEtolUr866TiuOIH7ZdYVCQDVO8Jz5rw",
+        "details": [
+            "2d",
+            "3d",
+            "blender",
+            "paint",
+            "picture",
+            "paintedeffect",
+            "veronoi",
+            "photography",
+            "realistic",
+            "geometrynodes"
+        ]
+    },
+    "projet7": {
+        "titre": "Veronoi picture",
+        "description": "I used Substance Designer for creating veronoi modification and modified other parameter of image.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhbxm7x-e700778c-27e1-4a11-a3ff-067adf60437b.png/v1/fill/w_1280,h_1280,q_80,strp/veronoi_picture_by_noamlefantom_dhbxm7x-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzRhZmU0ODQ5LTJmMjEtNGIzYi05YWIzLTdlYTc0YzMwYjQ1OVwvZGhieG03eC1lNzAwNzc4Yy0yN2UxLTRhMTEtYTNmZi0wNjdhZGY2MDQzN2IucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.4A4gjKZ95zD0lyBvqbT4s25owSRRczOo9zlBC6Y6gUo",
+        "details": [
+            "darken",
+            "photography",
+            "picture",
+            "realistic",
+            "substancedesigner"
+        ]
+    },
+    "projet8": {
+        "titre": "Forge Conquest Tower",
+        "description": "A student project made with students of Gaming CampusI'm modeling and unwrapped it on blender, and texturing with Substance Painter.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhbxmxq-79311b70-66eb-4e81-84f3-c56034d43839.png/v1/fill/w_1280,h_958/forge_conquest_tower_by_noamlefantom_dhbxmxq-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTU4IiwicGF0aCI6IlwvZlwvNGFmZTQ4NDktMmYyMS00YjNiLTlhYjMtN2VhNzRjMzBiNDU5XC9kaGJ4bXhxLTc5MzExYjcwLTY2ZWItNGU4MS04NGYzLWM1NjAzNGQ0MzgzOS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gsZVD_VLgYl9_QRTeXJNosKrLWcx-1XSC0EbxAkYJ1w",
+        "details": [
+            "3d",
+            "blender",
+            "lightning",
+            "modelling",
+            "texturing",
+            "medievalarchitecture",
+            "gameasset",
+            "substancepainter"
+        ]
+    },
+    "projet9": {
+        "titre": "Daily Challenge Crabe",
+        "description": "I'have created a scene on the theme was crab.I have modeled all the scene and created a specific shader for volumetric effect.The time I have take was 8 hours.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhb3uoc-bc3e5e5a-3fa5-4537-a35d-d9781a415445.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRhZmU0ODQ5LTJmMjEtNGIzYi05YWIzLTdlYTc0YzMwYjQ1OVwvZGhiM3VvYy1iYzNlNWU1YS0zZmE1LTQ1MzctYTM1ZC1kOTc4MWE0MTU0NDUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.2cedmZexbQ6GOc1cc1RaVtxc0aV6ZJTXxLHZUVgkn8I",
+        "details": [
+            "3d",
+            "blender",
+            "sea",
+            "shadering",
+            "aquarium",
+            "crab",
+            "lightning",
+            "modelling",
+            "blender3dmodel",
+            "blendereevee"
+        ]
+    },
+    "projet10": {
+        "titre": "Diorama",
+        "description": "This is a screen of a video diorama made during a school project in 3D.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhax0bc-e5a81430-0bd5-4a28-8048-9fdcac93928a.png/v1/fill/w_1280,h_640,q_80,strp/diorama_by_noamlefantom_dhax0bc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvNGFmZTQ4NDktMmYyMS00YjNiLTlhYjMtN2VhNzRjMzBiNDU5XC9kaGF4MGJjLWU1YTgxNDMwLTBiZDUtNGEyOC04MDQ4LTlmZGNhYzkzOTI4YS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.4lMw0f4iV2KXbZnGF4jnD3dfdECeXWtBifj4fBrF9w4",
+        "details": [
+            "3d",
+            "blender",
+            "boat",
+            "lightning",
+            "modelling",
+            "texturing",
+            "harbour",
+            "shading",
+            "sunset",
+            "blenderrender",
+            "blendereevee",
+            "geometrynodes"
+        ]
+    },
+    "projet11": {
+        "titre": "Datalogy size type of way in Cotes d'Armor",
+        "description": "A project in which I wanted to represent all types of paths in the C\u00f4tes d'Armor in France.This is a photograph of wool taking the form of different types of practices with the proportional size. I played with different orientations of lights to accentuate the colors.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhaw0tk-cb94610e-2eb8-4ff7-8ef4-2bf903c7394d.jpg",
+        "details": [
+            "sport",
+            "cotesdarmor",
+            "way",
+            "bretagne",
+            "france",
+            "laine",
+            "photography",
+            "wool"
+        ]
+    },
+    "projet12": {
+        "titre": "Infographic Nautile Ifremer Wireframe",
+        "description": "Wireframe of my project",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhaw1tm-3b417d38-c9af-449e-837c-f80ac2179463.png/v1/fill/w_1280,h_680/infographic_nautile_ifremer_wireframe_by_noamlefantom_dhaw1tm-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjgwIiwicGF0aCI6IlwvZlwvNGFmZTQ4NDktMmYyMS00YjNiLTlhYjMtN2VhNzRjMzBiNDU5XC9kaGF3MXRtLTNiNDE3ZDM4LWM5YWYtNDQ5ZS04MzdjLWY4MGFjMjE3OTQ2My5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.swY6q6cJ33u_EiODi7U8QWXIxBBWsLRHFzQxIYSzRmY",
+        "details": [
+            "3d",
+            "deepsea",
+            "infographic",
+            "nautile",
+            "submarine",
+            "underwater",
+            "watercraft",
+            "ifremer",
+            "segasonicteam",
+            "blenderrender",
+            "blendereevee"
+        ]
+    },
+    "projet13": {
+        "titre": "Infographic Nautile Ifremer",
+        "description": "It is a free school project in which we make an infographic about one of the IFREMER submarine.I spent the most of my time to create a 3D submarine named NAUTILE to use it like I want to.",
+        "imageL_Link": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4afe4849-2f21-4b3b-9ab3-7ea74c30b459/dhaw1t0-c891fe40-75f5-418b-95dc-9ba0cf03d993.jpg/v1/fill/w_1280,h_1810,q_75,strp/infographic_nautile_ifremer_by_noamlefantom_dhaw1t0-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRhZmU0ODQ5LTJmMjEtNGIzYi05YWIzLTdlYTc0YzMwYjQ1OVwvZGhhdzF0MC1jODkxZmU0MC03NWY1LTQxOGItOTVkYy05YmEwY2YwM2Q5OTMuanBnIiwiaGVpZ2h0IjoiPD0xODEwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvNGFmZTQ4NDktMmYyMS00YjNiLTlhYjMtN2VhNzRjMzBiNDU5XC9ub2FtbGVmYW50b20tNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.4rdnmrxFklTmtTwbijjV1O5XSuBwtAEPDOjOr0xZfCc",
+        "details": [
+            "3d",
+            "compositing",
+            "infographic",
+            "nautile",
+            "shading",
+            "watercraft",
+            "ifremer",
+            "blender",
+            "deepsea",
+            "lightning",
+            "modelling",
+            "submarine",
+            "underwater",
+            "segasonicteam",
+            "blenderrender",
+            "blendereevee"
+        ]
+    }
+}

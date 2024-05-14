@@ -110,6 +110,7 @@ class App:
             app.write_to_console("Activer tag spécifique")
             print("Activer tag spécifique")
             self.Button_Tag_add.place(x=350,y=160,width=70,height=25)
+
         else:
             app.write_to_console("desactiver les tag spécifique")
             print("desactiver les tag spécifique")
@@ -131,36 +132,53 @@ class App:
         
     def Button_Start(self):
         pseudo = self.Input_Label_Name_Retrieve.get()
-
+        page = 1
         app.write_to_console("Debut de la phase d'extraction des url vers les projets")
         print("Debut de la phase d'extraction des url vers les projets")
-        url = "https://www.deviantart.com/"+pseudo+"/gallery"
+        url=""
+        open("links.txt", "w").close()
+        while True:
+            url = f"https://www.deviantart.com/{pseudo}/gallery/all?page={page}"
+            response = requests.get(url)
+            if response.status_code == 200:
+                html = response.content
+                # Traitez le contenu HTML ici
+                print(f"Téléchargement de la page {page}...")
+                soup = BeautifulSoup(html, 'html.parser')
+                divs = soup.select('div._1xcj5')  # Sélectionne les divs avec les classes spécifiques _1mCeE    dl 10 : _1xcj5
+                # VeesyrsFantasy-AI
 
-        response = requests.get(url)
-        html = response.content
+                app.write_to_console("Debut de scraping sur la page gallery "+url)
+                print("Debut de scraping sur la page gallery "+url)
 
-        soup = BeautifulSoup(html, 'html.parser')
-        divs = soup.select('div._1xcj5')  # Sélectionne les divs avec les classes spécifiques
+                if divs:
+                    with open("links.txt", "a") as file:
+                        for div in divs:
+                            # Trouve le premier lien <a> dans la div
+                            first_link = div.find('a')
+                            if first_link:  # Vérifie si un lien a été trouvé dans la div
+                                href = first_link.get("href")
 
-        app.write_to_console("Debut de scraping sur la page gallery")
-        print("Debut de scraping sur la page gallery")
-        with open("links.txt", "w") as file:
-            for div in divs:
-                time.sleep(1)
-                # Trouve le premier lien <a> dans la div
-                first_link = div.find('a')
-                if first_link:  # Vérifie si un lien a été trouvé dans la div
-                    href = first_link.get("href")
-
-                    app.write_to_console("URL du lien dans la div:" + href)
-                    print("URL du lien dans la div:" + href)
-                    file.writelines(href + "\n")
+                                app.write_to_console("URL du lien dans la div:" + href)
+                                print("URL du lien dans la div:" + href)
+                                file.writelines(href + "\n")
+                            else:
+                                app.write_to_console(f"Aucun lien trouvé dans la div de {page}")
+                                print(f"Aucun lien trouvé dans la div de {page}")
                 else:
-                    app.write_to_console("Aucun lien trouvé dans la div")
-                    print("Aucun lien trouvé dans la div")
-        app.write_to_console("Fin")
-        print("Fin de la récupération des liens")
-        
+                    print("Cette page est vide")
+                    print(f"Fin de la récupération des liens de la page{page}")
+                    break
+                            
+                app.write_to_console("Fin")
+                print(f"Fin de la récupération des liens de la page{page}")
+                page += 1
+            else:
+                print(f"Le lien pour la page {page} n'existe pas.")
+                break
+                response = requests.get(url)
+                html = response.content
+
         # Fonction pour télécharger une image à partir de son URL et la sauvegarder dans un dossier
         def telecharger_image(url, nom_dossier, nom_fichier):
             # Créer le dossier s'il n'existe pas déjà
@@ -197,10 +215,10 @@ class App:
                 # Récupérer le contenu de chaque détail et stocker dans une liste
                 details_content = [detail_tag.text.strip() for detail_tag in detail_tags]
 
-                # Filtrer les détails qui sont dans la liste personnalisée
-                filtered_details = [detail for detail in details_content if detail in custom_list]
 
                 if self.CheckBox_activeTag.getvar(self.CheckBox_activeTag['variable']) == '1':
+                    # Filtrer les détails qui sont dans la liste personnalisée
+                    filtered_details = [detail for detail in details_content if detail in custom_list]
                     if filtered_details:
                         if title_tag:
                             # Récupérer le contenu de la balise h1 (titre)
@@ -259,8 +277,10 @@ class App:
                 return None
 
         # Lecture de la liste personnalisée à partir du fichier texte
-        with open("custom_list.txt", "r") as file:
-            custom_list = file.read().splitlines()
+        if self.CheckBox_activeTag.getvar(self.CheckBox_activeTag['variable']) == '1':
+            with open("custom_list.txt", "r") as file:
+                custom_list = file.read().splitlines()
+            
 
         # Lecture des liens à partir du fichier texte
         with open("links.txt", "r") as file:
@@ -276,6 +296,13 @@ class App:
         for i, link in enumerate(links, start=1):
             app.write_to_console("Récupération d'informations pour le lien :" + link)
             print("Récupération d'informations pour le lien :" + link)
+            custom_list=""
+            if self.CheckBox_activeTag.getvar(self.CheckBox_activeTag['variable']) == '0':
+                custom_list="empty"
+            else:
+                with open("custom_list.txt", "r") as file:
+                    custom_list = file.read().splitlines()
+                    
             project_info = get_info_from_link(link, custom_list)
             if project_info:
                 project_key = f"projet{i}"
@@ -298,12 +325,8 @@ class App:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    with open("custom_list.txt", "a") as file:
-        file.write("#")
     app = App(root)
     app.write_to_console("Welcome to the console!") 
     root.mainloop()
 
-# First you need to execute : pip install pyinstaller
-# In a second time : pyinstaller --onefile --icon=DeviantScrap.ico --name="DeviantScrap" DeviantScrap.py
-
+# pyinstaller --onefile --icon=DeviantArtScraper.ico --name="DeviantArtScraper" MyScraptArt.py
