@@ -4,6 +4,7 @@ import time
 import json
 import os
 
+import re
 import tkinter as tk
 import tkinter.font as tkFont
 from tkinter.scrolledtext import ScrolledText
@@ -202,6 +203,29 @@ class App:
 
         # Fonction pour récupérer les informations à partir d'un lien
         def get_info_from_link(url, custom_list):
+            def remplacer_caracteres_speciaux(chaine):
+            # Définir les caractères spéciaux à remplacer et leur équivalent
+            # <, >, :, “, /, \, |, ?, *
+                caracteres_speciaux = {
+                    "<": "_",
+                    ">": "_",
+                    ":": "_",
+                    "“": "_",
+                    "/": "_",
+                    "'\'": "_",
+                    "|": "_",
+                    "?": "_",
+                    "*": "_",
+                    # Ajoutez d'autres caractères spéciaux et leurs équivalents au besoin
+                }
+                # Utiliser une expression régulière pour rechercher et remplacer les caractères spéciaux
+                for caractere, equivalent in caracteres_speciaux.items():
+                    chaine = re.sub(re.escape(caractere), equivalent, chaine)
+                
+                return chaine
+            
+
+
             response = requests.get(url)
             if response.status_code == 200:
                 html = response.content
@@ -222,7 +246,8 @@ class App:
                     if filtered_details:
                         if title_tag:
                             # Récupérer le contenu de la balise h1 (titre)
-                            titre_content = title_tag.text.strip()
+                            # titre_content = title_tag.text.strip()
+                            titre_content=remplacer_caracteres_speciaux(title_tag.text.strip())
                             # Récupérer le contenu de la balise div (description)
                             
                             description_content=""
@@ -251,7 +276,8 @@ class App:
                 else:
                     if title_tag:
                         # Récupérer le contenu de la balise h1 (titre)
-                        titre_content = title_tag.text.strip()
+                        # titre_content = title_tag.text.strip()
+                        titre_content=remplacer_caracteres_speciaux(title_tag.text.strip())
                         # Récupérer le contenu de la balise div (description)
                         description_content=""
                         if description_tag:
