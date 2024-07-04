@@ -180,26 +180,56 @@ class App:
                 response = requests.get(url)
                 html = response.content
 
+        # # Fonction pour télécharger une image à partir de son URL et la sauvegarder dans un dossier
+        # def telecharger_image(url, nom_dossier, nom_fichier):
+        #     # Créer le dossier s'il n'existe pas déjà
+        #     if not os.path.exists(nom_dossier):
+        #         os.makedirs(nom_dossier)
+        #     # Chemin complet du fichier où l'image sera sauvegardée
+        #     output_folder = os.path.join(nom_dossier, nom_fichier)
+        #     # Envoyer une requête GET à l'URL de l'image
+        #     reponse = requests.get(url)
+        #     # Vérifier si la requête a réussi (statut 200)
+        #     if reponse.status_code == 200:
+        #         # Ouvrir un fichier en mode binaire pour écrire l'image téléchargée
+        #         with open(output_folder, 'wb') as f:
+        #             # Écrire les données de l'image dans le fichier
+        #             f.write(reponse.content)
+        #         app.write_to_console("L'image a été téléchargée avec succès sous le nom" + nom_fichier + "dans le dossier" + nom_dossier)
+        #         print("L'image a été téléchargée avec succès sous le nom" + nom_fichier + "dans le dossier" + nom_dossier)
+        #     else:
+        #         app.write_to_console("Impossible de télécharger l'image. Statut de la réponse :" + reponse.status_code)
+        #         print("Impossible de télécharger l'image. Statut de la réponse :" + reponse.status_code)
+
         # Fonction pour télécharger une image à partir de son URL et la sauvegarder dans un dossier
-        def telecharger_image(url, nom_dossier, nom_fichier):
-            # Créer le dossier s'il n'existe pas déjà
-            if not os.path.exists(nom_dossier):
-                os.makedirs(nom_dossier)
-            # Chemin complet du fichier où l'image sera sauvegardée
-            output_folder = os.path.join(nom_dossier, nom_fichier)
+        def telecharger_image(url, nom_dossier, nom_projet, nom_fichier):
+            # Créer le chemin complet du dossier du projet
+            chemin_dossier_projet = os.path.join(nom_dossier, nom_projet)
+            
+            # Créer le dossier du projet s'il n'existe pas
+            if not os.path.exists(chemin_dossier_projet):
+                os.makedirs(chemin_dossier_projet)
+
+            nom_fichier=nom_fichier
+
+            # Chemin complet pour enregistrer l'image
+            chemin_image = os.path.join(chemin_dossier_projet, nom_fichier)
+            
             # Envoyer une requête GET à l'URL de l'image
             reponse = requests.get(url)
+            
             # Vérifier si la requête a réussi (statut 200)
             if reponse.status_code == 200:
                 # Ouvrir un fichier en mode binaire pour écrire l'image téléchargée
-                with open(output_folder, 'wb') as f:
+                with open(chemin_image, 'wb') as f:
                     # Écrire les données de l'image dans le fichier
                     f.write(reponse.content)
-                app.write_to_console("L'image a été téléchargée avec succès sous le nom" + nom_fichier + "dans le dossier" + nom_dossier)
-                print("L'image a été téléchargée avec succès sous le nom" + nom_fichier + "dans le dossier" + nom_dossier)
+                app.write_to_console(f"L'image a été téléchargée avec succès sous le nom {nom_fichier} dans le dossier {chemin_dossier_projet}")
+                print(f"L'image a été téléchargée avec succès sous le nom {nom_fichier} dans le dossier {chemin_dossier_projet}")
             else:
-                app.write_to_console("Impossible de télécharger l'image. Statut de la réponse :" + reponse.status_code)
-                print("Impossible de télécharger l'image. Statut de la réponse :" + reponse.status_code)
+                app.write_to_console(f"Impossible de télécharger l'image. Statut de la réponse : {reponse.status_code}")
+                print(f"Impossible de télécharger l'image. Statut de la réponse : {reponse.status_code}")
+
 
         # Fonction pour récupérer les informations à partir d'un lien
         def get_info_from_link(url, custom_list):
@@ -262,7 +292,7 @@ class App:
 
                             image_link = image_tag['src'] if image_tag else None  # Si image_tag est None, image_link sera None également
                             nom_fichier=titre_content+".png"
-                            telecharger_image(image_link, pseudo, nom_fichier)
+                            telecharger_image(image_link, pseudo, titre_content, nom_fichier)
                             # Retourner un dictionnaire avec les informations extraites
                             return {"titre": titre_content, "description": description_content, "imageL_Link": image_link, "details": filtered_details}
                         else:
@@ -289,8 +319,8 @@ class App:
                         else:
                             description_content = "Pas de description proposée par l'auteur"
                         image_link = image_tag['src'] if image_tag else None  # Si image_tag est None, image_link sera None également
-                        nom_fichier=titre_content+".png"
-                        telecharger_image(image_link, pseudo, nom_fichier)
+                        nom_fichier=titre_content+"_1.png"
+                        telecharger_image(image_link, pseudo, titre_content, nom_fichier)
                         # Retourner un dictionnaire avec les informations extraites
                         return {"titre": titre_content, "description": description_content, "imageL_Link": image_link, "details": details_content}
                     else:
