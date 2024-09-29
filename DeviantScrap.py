@@ -179,42 +179,47 @@ class App:
 
                 title_tag = soup.find('h1', class_='_33gAi')
                 description_tag = soup.find('div', class_='legacy-journal')
-                image_tag = soup.find('img', class_='_28lPU')
+                image_tags = soup.find_all('img', class_='_28lPU')  # Récupérer toutes les images avec la classe spécifique
                 detail_tags = soup.find_all('span', class_='_1nwad')
 
                 details_content = [detail_tag.text.strip() for detail_tag in detail_tags]
+                images_content = []
 
                 if self.CheckBox_activeTag.getvar(self.CheckBox_activeTag['variable']) == '1':
                     filtered_details = [detail for detail in details_content if detail in custom_list]
-                    if filtered_details:
-                        if title_tag:
-                            titre_content = remplacer_caracteres_speciaux(title_tag.text.strip())
-                            description_content = description_tag.text.strip() if description_tag else "Pas de description proposée par l'auteur"
-                            image_link = image_tag['src'] if image_tag else None
-                            nom_fichier = titre_content + ".png"
+                    if filtered_details and title_tag:
+                        titre_content = remplacer_caracteres_speciaux(title_tag.text.strip())
+                        description_content = description_tag.text.strip() if description_tag else "Pas de description proposée par l'auteur"
+                        
+                        for index, image_tag in enumerate(image_tags):
+                            image_link = image_tag['src']
+                            nom_fichier = f"{titre_content}_{index + 1}.png"
                             pseudo = "uploads"
                             telecharger_image(image_link, pseudo, nom_fichier)
-                            return {"titre": titre_content, "description": description_content, "details": filtered_details}
-                        else:
-                            self.write_to_console("Balise h1 avec la classe spécifique non trouvée.")
-                            return None
+                            images_content.append(f"/uploads/{nom_fichier}")
+
+                        return {"titre": titre_content, "description": description_content, "details": filtered_details, "images": images_content}
                     else:
-                        self.write_to_console("Aucun détail correspondant à la liste personnalisée trouvé.")
+                        self.write_to_console("Aucun détail correspondant à la liste personnalisée trouvé ou balise h1 non trouvée.")
                         return None
                 else:
                     if title_tag:
                         titre_content = remplacer_caracteres_speciaux(title_tag.text.strip())
                         description_content = description_tag.text.strip() if description_tag else "Pas de description proposée par l'auteur"
-                        image_link = image_tag['src'] if image_tag else None
-                        nom_fichier = titre_content + "_1.png"
-                        pseudo = "uploads"
-                        telecharger_image(image_link, pseudo, nom_fichier)
-                        return {"titre": titre_content, "description": description_content, "image_link": image_link, "details": details_content}
+                        
+                        for index, image_tag in enumerate(image_tags):
+                            image_link = image_tag['src']
+                            nom_fichier = f"{titre_content}_{index + 1}.png"
+                            pseudo = "uploads"
+                            telecharger_image(image_link, pseudo, nom_fichier)
+                            images_content.append(f"/uploads/{nom_fichier}")
+
+                        return {"titre": titre_content, "description": description_content, "details": details_content, "images": images_content}
                     else:
                         self.write_to_console("Balise h1 avec la classe spécifique non trouvée.")
                         return None
             else:
-                self.write_to_console("Impossible de récupérer les informations à partir du lien : " + url)
+                self.write_to_console(f"Impossible de récupérer les informations à partir du lien : {url}")
                 return None
 
         custom_list = []
